@@ -108,6 +108,7 @@ class YOLOv3(nn.Module):
         self.in_channels = in_channels
         self.layers = self._create_conv_layers()
 
+    #forward
     def forward(self, x):
         outputs = []  # for each scale
         route_connections = []
